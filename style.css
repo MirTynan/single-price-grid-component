@@ -1,0 +1,121 @@
+/* ## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 180px 220px;
+  border-radius: 5px;
+  box-shadow: 5% 5% hsl(218, 22%, 67%);
+}
+
+.intro-section {
+  grid-column: 1 / -1;
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px 25px 25px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.intro-h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+.intro {
+  color: hsl(218, 22%, 67%);
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.subscription-section {
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(0, 0%, 100%);
+  padding: 30px 25px 25px;
+  border-bottom-left-radius: 5px;
+}
+
+.price-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  /* padding: 5px; */
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.per-month {
+  font-size: 12px;
+  color: hsl(178, 77%, 81%);
+}
+
+.subscription-p {
+  color: hsl(204, 43%, 93%);
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+button {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(71, 73%, 54%);
+  font-family: "Karla", sans-serif;
+  padding: 12px;
+  box-shadow: 10px 5px 5px hsla(0, 0%, 37%, 0.218);
+}
+
+.why-us-section {
+  background-color: hsla(179, 62%, 43%, 0.8);
+  color: hsl(0, 0%, 100%);
+  padding: 30px 25px 25px;
+  border-bottom-right-radius: 5px;
+}
+
+ul {
+  font-size: 12px;
+  color: hsl(178, 77%, 81%);
+  list-style: none;
+  line-height: 1.5;
+}
